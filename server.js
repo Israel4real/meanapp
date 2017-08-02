@@ -27,6 +27,7 @@ mongoose.connect('mongodb://localhost:27017/tutorial', function(err) {
   }
 });
 
+//get index
 app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname + '/public/app/views/index.html'));
 });
